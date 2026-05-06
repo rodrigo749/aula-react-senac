@@ -4,10 +4,11 @@ import AboutPage from './components/About/About.jsx';
 import Profile from './components/Profile/Profile.jsx';
 import AdminPanel from './components/AdminPanel/AdminPanel.jsx';
 import LoginForm from './components/LoginForm/LoginForm.jsx';
+import ShoppingList from './components/ShoppingList/ShoppingList.jsx';
 
 function App() {
   let content;
-  let isLoggedIn = false;
+  let isLoggedIn = true;
   if (isLoggedIn) {
     content = <AdminPanel />;
   } else {
@@ -25,6 +26,7 @@ function App() {
         <MyButton />
         <AboutPage />
       </header>
+      <ShoppingList />
     </div>
   );
 }
