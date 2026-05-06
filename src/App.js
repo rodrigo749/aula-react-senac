@@ -7,7 +7,7 @@ import LoginForm from './components/LoginForm/LoginForm.jsx';
 
 function App() {
   let content;
-  let isLoggedIn = true;
+  let isLoggedIn = false;
   if (isLoggedIn) {
     content = <AdminPanel />;
   } else {
