@@ -1,10 +1,6 @@
 import './App.css';
-import MyButton from './components/Button/Button.jsx';
-import AboutPage from './pages/About/About.jsx';
-import Profile from './components/Profile/Profile.jsx';
 import AdminPanel from './components/AdminPanel/AdminPanel.jsx';
 import LoginForm from './components/LoginForm/LoginForm.jsx';
-import ShoppingList from './components/ShoppingList/ShoppingList.jsx';
 import RoutesApp from './Routes.jsx';
 
 function App() {
@@ -19,16 +15,12 @@ function App() {
   return (
     <div className="App">
       <RoutesApp />
-      <header className="App-header">
+      <header>
         <h1>Hello, React!</h1>
         <div>
           {content}
         </div>
-        <Profile />
-        <MyButton />
-        <AboutPage />
       </header>
-      <ShoppingList />
     </div>
   );
 }

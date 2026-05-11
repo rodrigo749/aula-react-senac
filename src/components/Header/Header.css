@@ -1,0 +1,80 @@
+/* ── Header ──────────────────────────────────────────── */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 2.5rem;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ── Logo ─────────────────────────────────────────────── */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  user-select: none;
+}
+
+.header-logo-icon {
+  font-size: 1.9rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 8px rgba(97, 218, 251, 0.5));
+  animation: spin-once 0.6s ease-out;
+}
+
+@keyframes spin-once {
+  from { transform: rotate(-30deg) scale(0.8); opacity: 0; }
+  to   { transform: rotate(0deg)   scale(1);   opacity: 1; }
+}
+
+.header-logo-text {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #fff;
+  background: linear-gradient(90deg, #61dafb, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Nav ──────────────────────────────────────────────── */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.header-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.header-link:hover {
+  color: #fff;
+  background: rgba(97, 218, 251, 0.12);
+}
+
+.header-link--active {
+  color: #0f0c29;
+  background: linear-gradient(135deg, #61dafb, #a78bfa);
+  box-shadow: 0 2px 12px rgba(97, 218, 251, 0.35);
+  font-weight: 600;
+}
