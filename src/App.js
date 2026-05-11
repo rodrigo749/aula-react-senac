@@ -16,10 +16,7 @@ function App() {
     <div className="App">
       <RoutesApp />
       <header>
-        <h1>Hello, React!</h1>
-        <div>
-          {content}
-        </div>
+        
       </header>
     </div>
   );
