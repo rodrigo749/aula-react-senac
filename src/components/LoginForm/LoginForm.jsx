@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./LoginForm.css";
 
 function LoginForm() {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
   const [mostrarSenha, setMostrarSenha] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // lógica de login aqui
+    navigate("/home");
   };
 
   return (

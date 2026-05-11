@@ -6,7 +6,7 @@ export default function Login() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
 
-      <main style={{ flex: 1, padding: '2rem' }}>
+      <main style={{ flex: 1 }}>
         <LoginForm />
       </main>
       <Footer />
